@@ -1,0 +1,54 @@
+.topbarIconBadge
+{
+    width:75px;
+    height:25px;
+    background-color: green;
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topbarIconBadge_red
+{
+    width:75px;
+    height:25px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top{
+    display: flex;
+    align-items: center;
+}
+
+.comp_text
+{
+    margin-left: 2%;
+    font-weight: lighter;
+}
+
+.check_text
+{
+    display: flex;
+    align-items: center;
+}
+
+.title
+{
+    font-weight: bolder;
+    font-size: 20px;
+}
