@@ -18,7 +18,7 @@ router.post('/register',async (req,res)=>{
       let check = await User.findOne({email:req.body.email});
       if(check)
       {
-          return res.status(400).json({success,error:"Sorry this emailId already exists"});
+          return res.status(400).json({error:"Sorry this emailId already exists"});
       }
      
         const user = await newUser.save();
@@ -41,7 +41,9 @@ router.post('/register',async (req,res)=>{
 router.post('/login', async(req,res)=>{
     try {
 
+        console.log("Hello");
         const user = await User.findOne({email : req.body.email});
+        console.log(req.body.email);
         if(!user)
         {
             return res.status(401).json("Wrong username or password");

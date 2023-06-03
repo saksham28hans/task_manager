@@ -12,14 +12,15 @@ const Notes = () => {
     const [note, setnote] = useState({id:"",title:"",description: "",completed:""});
     const navigate = useNavigate();
     useEffect(() => {
-        if(localStorage.getItem('token'))
-        {
+        // if(localStorage.getItem('token'))
+        // {
+        // getNotes();
+        // }
+        // else
+        // {
+        //    navigate("/login");
+        // }
         getNotes();
-        }
-        else
-        {
-           navigate("/login");
-        }
     }, []);
     const ref = useRef();
     const refClose = useRef();
